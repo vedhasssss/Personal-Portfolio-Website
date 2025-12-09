@@ -1,105 +1,101 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    
 }
 
-.hero {
-    position: relative;
+.hero{
+    position:relative;
     width: 100%;
-    min-height: 100vh;
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    padding: 20px;
+    height:100vh;
+    background:#ffffff;
 }
 
-.logo {
-    height: 120px;
-    width: 120px;
+.logo{
+    height: 200px;
+    width: 200px;
 }
-
-nav {
+nav{
     display: flex;
-    width: 90%;
+    width: 84%;
     margin: auto;
     padding: 20px 0;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+   
 }
-
-nav ul {
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li {
+nav ul li{
+    display: inline-block;
     list-style: none;
+    margin: 10px 20px;
 }
-
-nav ul li a {
-    text-decoration: none;
+nav ul li a{
+    text-decoration:none;
     color: #000;
     font-weight: bold;
 }
 
-nav ul li a:hover {
+nav ul li a:hover{
     color: orange;
 }
 
-.detail {
-    width: 50%;
-    margin-left: 5%;
+.detail{
+    margin-left: 8%;
+    margin-top: 8%;
 }
-
-.detail h1 {
-    font-size: clamp(28px, 5vw, 50px);
+.detail h1{
+    font-size: 50px;
     color: #212121;
     margin-bottom: 20px;
 }
-
-span {
+span{
     color: orange;
 }
-
-.detail p {
-    color: #555;
+.detail p{
+    color:#555;
     line-height: 22px;
-    font-size: 1rem;
 }
-
-.detail a {
-    background: #212121;
+.detail a{
+    background:#212121;
     padding: 10px 18px;
+    text-decoration: none;
+    color: #fff;
     display: inline-block;
     margin: 30px 0;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
+    border-radius:5px;
 }
-
-.images {
+.images{
     width: 45%;
-    position: absolute;
+    height: 80%;
+    position:absolute;
     bottom: 0;
-    right: 5%;
+    right: 100px;
 }
-
-.images img {
-    width: 100%;
-    height: auto;
+.images img{
+    height:100%;
     position: absolute;
+    left:50%;
     bottom: 0;
-    left: 50%;
     transform: translateX(-50%);
-    transition: bottom 1s, left 1s;
+    transition: bottom 1s,left 1s;
 }
 
-.images:hover .shape {
+
+.images:hover .shape{
     bottom: 40px;
 }
-
-.images:hover .boy {
-    left: 45%;
+.images:hover .boy{
+    left:45%;
+}
+.CV:hover{
+    color: orange;
+}
+.call{
+    height: 30px;
+    width: 30px;
+}
+.email{
+    height: 30px;
+    width: 30px;
 }
