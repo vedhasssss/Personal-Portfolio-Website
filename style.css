@@ -11,17 +11,13 @@
   background: #ffffff;
 }
 
-.logo {
-  height: 200px;
-  width: 200px;
-}
 nav {
   display: flex;
   width: 84%;
   margin: auto;
   padding: 20px 0;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 nav ul li {
   display: inline-block;
@@ -340,10 +336,7 @@ footer {
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
-  }
-  .logo {
-    height: 120px;
-    width: 120px;
+    align-items: center;
   }
   .hero {
     height: auto;
