@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VEDHAS PORTFOLIO</title>
+    <meta
+      name="description"
+      content="Vedhas Shinde - B.Sc. IT graduate with skills in Python, SQL, Power BI and full-stack web development. Open to Data Analyst, Junior Developer and Data/IT Operations roles."
+    />
+    <title>Vedhas Shinde | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -11,24 +15,20 @@
       <nav>
         <img src="VEDHAS.png" alt="Vedhas logo" class="logo" />
         <ul>
-          <li><a href="tel:+9082227315">CONTACT</a></li>
-
-          <li><a href="Vedhas_Shinde_Resume.pdf">PORTFOLIO</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#experience">EXPERIENCE</a></li>
+          <li><a href="#contact">CONTACT</a></li>
           <li><a href="mailto:shindevedhasp@gmail.com">HIRE ME</a></li>
-          <li>
-            <a href="https://www.linkedin.com/in/vedhas-shinde/">LINKEDIN</a>
-          </li>
         </ul>
       </nav>
       <div class="detail">
         <h1>I am <span>Vedhas Shinde</span></h1>
         <p>
-          This is my official portfolio website to show all <br />
-          Details and work experience in web development <br /><a
-            href="Vedhas_Shinde_Resume.pdf"
-            class="CV"
-            >MY RESUME</a
-          >
+          B.Sc. IT graduate (2026, CGPA 9.15) with a strong foundation in <br />
+          Python, SQL, Excel, Power BI and full-stack web development. <br />
+          Open to Data Analyst, Junior Developer and Data/IT Operations roles.
+          <br /><a href="Vedhas_Shinde_Resume.pdf" class="CV">MY RESUME</a>
         </p>
       </div>
 
@@ -37,34 +37,140 @@
         <img src="boy1.png" alt="boy" class="boy" />
       </div>
     </div>
-    <section id="achievements" class="achievements-section">
-      <h2>Achievements</h2>
 
-      <div class="achievement-container">
-        <div class="achievement-card">
-          <h3>Most Deserving Student Award</h3>
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <h3>Data &amp; Analytics</h3>
           <p>
-            Received for outstanding academic and technical performance
-            (2024–25).
+            SQL (MySQL), Microsoft Excel, Power BI, Tableau (learning), Data
+            Cleaning, Data Validation, Quality Checks
           </p>
         </div>
-
-        <div class="achievement-card">
-          <h3>Smart India Hackathon</h3>
+        <div class="skill-card">
+          <h3>Programming</h3>
+          <p>Python, JavaScript, Java, C, C++</p>
+        </div>
+        <div class="skill-card">
+          <h3>Web Development</h3>
           <p>
-            Participated in SIH 2024, contributing to real-world
-            problem-solving.
+            HTML, CSS, React.js, Node.js, Express.js, REST APIs, JWT
+            Authentication, Streamlit, Wix
           </p>
         </div>
-
-        <div class="achievement-card">
-          <h3>Udemy Certifications</h3>
-          <p>Completed Web Development and Python Bootcamp Courses.</p>
+        <div class="skill-card">
+          <h3>Databases &amp; Tools</h3>
+          <p>MySQL, MongoDB, Git, GitHub, VS Code, Microsoft Word</p>
+        </div>
+        <div class="skill-card">
+          <h3>AI / GenAI</h3>
+          <p>Google Gemini API, Prompt Engineering, LLM Applications</p>
+        </div>
+        <div class="skill-card">
+          <h3>Professional</h3>
+          <p>
+            Attention to Detail, Written and Verbal English Communication, Time
+            Management, Teamwork
+          </p>
         </div>
       </div>
     </section>
+
+    <section id="projects" class="projects-section">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <h3>Mutual Fund NAV Data Validation</h3>
+          <span class="tech">SQL (MySQL), Excel</span>
+          <ul>
+            <li>
+              Cleaned AMFI mutual fund NAV data in Excel and loaded a sample of
+              2,470 records into MySQL.
+            </li>
+            <li>
+              Wrote SQL checks for zero or negative NAVs, missing ISINs,
+              outdated dates and duplicates, logging 1,838 issues with reasons
+              in a separate table.
+            </li>
+          </ul>
+          <a
+            href="https://github.com/vedhasssss/mutual-fund-nav-data-validation"
+            class="proj-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View on GitHub</a
+          >
+        </div>
+
+        <div class="project-card">
+          <h3>MOPONS - Coupon Marketplace</h3>
+          <span class="tech">MongoDB, Express.js, React.js, Node.js</span>
+          <ul>
+            <li>
+              Built a full-stack marketplace to buy, sell and exchange coupons
+              with REST APIs, JWT authentication, a digital wallet and a
+              transaction-tracking dashboard.
+            </li>
+            <li>
+              Used the Gemini API to extract brand, discount, code and expiry
+              from uploaded images to auto-fill listings.
+            </li>
+          </ul>
+          <a
+            href="https://mopons.vercel.app"
+            class="proj-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Live Demo</a
+          >
+        </div>
+
+        <div class="project-card">
+          <h3>Professor GPT - LLM-Powered Learning App</h3>
+          <span class="tech">Python, Streamlit, Gemini API</span>
+          <ul>
+            <li>
+              Built and deployed an interactive app that teaches any
+              user-chosen topic using prompt engineering.
+            </li>
+          </ul>
+          <a
+            href="https://prof-gpt-vedhassssss.streamlit.app"
+            class="proj-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Live Demo</a
+          >
+        </div>
+      </div>
+    </section>
+
     <section id="experience" class="experience-section">
       <h2>Experience</h2>
+
+      <div class="experience-item">
+        <div class="exp-header">
+          <h3>Proctor (Freelance)</h3>
+          <span class="exp-date">Oct 2025 – Present</span>
+        </div>
+
+        <h4>IIBF Examination Proctoring, Mumbai</h4>
+        <ul>
+          <li>
+            Verified candidate identities and documents against official records
+            before exams, following strict procedures.
+          </li>
+          <li>
+            Maintained accurate attendance records and flagged discrepancies in
+            real time under tight timelines.
+          </li>
+          <li>
+            Followed guidelines and policies consistently across sessions to
+            keep exam conduct compliant.
+          </li>
+        </ul>
+      </div>
 
       <div class="experience-item">
         <div class="exp-header">
@@ -75,13 +181,14 @@
         <h4>Lexian and Jurian, Mumbai</h4>
         <ul>
           <li>
-            Developed responsive UI components using HTML, CSS, and JavaScript.
+            Built responsive web pages using HTML, CSS and JavaScript.
           </li>
           <li>
-            Collaborated in website migration to Wix, improving maintainability.
+            Supported migration of the company website to Wix, moving and
+            checking content for accuracy.
           </li>
           <li>
-            Learned and applied Agile methodologies with cross-functional teams.
+            Worked with cross-functional teams and learned Agile working basics.
           </li>
         </ul>
 
@@ -95,5 +202,93 @@
         </a>
       </div>
     </section>
+
+    <section id="education" class="education-section">
+      <h2>Education &amp; Training</h2>
+      <div class="education-container">
+        <div class="skill-card">
+          <h3>B.Sc. Information Technology (2026)</h3>
+          <p>
+            Thakur Shyamnarayan Degree College, Mumbai University<br />
+            CGPA: 9.15
+          </p>
+        </div>
+        <div class="skill-card">
+          <h3>Data Science &amp; Analytics with GenAI</h3>
+          <p>
+            IT Vedant (ongoing): Excel, Power BI, Tableau, SQL, Machine
+            Learning
+          </p>
+        </div>
+        <div class="skill-card">
+          <h3>Certifications</h3>
+          <p>
+            Power BI for Beginners (SimpliLearn)<br />
+            Python for Beginners, Jan 2024 (Udemy)<br />
+            Web Development, Feb 2024 (Udemy)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="achievements-section">
+      <h2>Achievements &amp; Activities</h2>
+
+      <div class="achievement-container">
+        <div class="achievement-card">
+          <h3>Most Deserving Student Award</h3>
+          <p>
+            Awarded Most Deserving Student of BSc-IT for outstanding academic
+            and technical performance (2024–25).
+          </p>
+        </div>
+
+        <div class="achievement-card">
+          <h3>Smart India Hackathon</h3>
+          <p>Participation Certificate, Smart India Hackathon (2024).</p>
+        </div>
+
+        <div class="achievement-card">
+          <h3>Computer Society of India</h3>
+          <p>
+            Technical Team Member (2025–26) and Creative Team Member (2024–25).
+          </p>
+        </div>
+
+        <div class="achievement-card">
+          <h3>Club Cricketer</h3>
+          <p>Teamwork and strategic thinking on and off the field.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Let's Connect</h2>
+      <p>
+        Open to entry-level Data Analyst, Junior Developer and Data/IT
+        Operations roles.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:shindevedhasp@gmail.com">shindevedhasp@gmail.com</a>
+        <a href="tel:+919082227315">+91 9082227315</a>
+        <a
+          href="https://www.linkedin.com/in/vedhas-shinde/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        <a
+          href="https://github.com/vedhasssss"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+        <a href="Vedhas_Shinde_Resume.pdf" target="_blank">Resume (PDF)</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Vedhas Shinde &middot; Mumbai, India</p>
+    </footer>
   </body>
 </html>
