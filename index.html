@@ -58,12 +58,15 @@
             Operations roles.
           </p>
         </div>
-        <div class="hero-photo">
+        <div class="hero-photo" id="heroPhoto">
+          <span class="orb orb-1" aria-hidden="true"></span>
+          <span class="orb orb-2" aria-hidden="true"></span>
+          <span class="orb orb-3" aria-hidden="true"></span>
           <img
             src="boy1.png"
             alt="Portrait of Vedhas Shinde"
-            width="600"
-            height="1000"
+            width="558"
+            height="900"
           />
         </div>
       </section>
@@ -386,6 +389,27 @@
         var reduce = window.matchMedia(
           "(prefers-reduced-motion: reduce)"
         ).matches;
+        var photo = document.getElementById("heroPhoto");
+        if (photo && !reduce && window.matchMedia("(hover: hover)").matches) {
+          photo.addEventListener("mousemove", function (e) {
+            var r = photo.getBoundingClientRect();
+            var x = (e.clientX - r.left) / r.width - 0.5;
+            var y = (e.clientY - r.top) / r.height - 0.5;
+            photo.style.setProperty("--ry", (x * 14).toFixed(2) + "deg");
+            photo.style.setProperty("--rx", (-y * 14).toFixed(2) + "deg");
+            photo.style.setProperty("--px", (x * 14).toFixed(1) + "px");
+            photo.style.setProperty("--py", (y * 10).toFixed(1) + "px");
+          });
+          photo.addEventListener("mouseleave", function () {
+            ["--rx", "--ry"].forEach(function (p) {
+              photo.style.setProperty(p, "0deg");
+            });
+            ["--px", "--py"].forEach(function (p) {
+              photo.style.setProperty(p, "0px");
+            });
+          });
+        }
+
         var bars = document.querySelectorAll(".bar span");
         var kpis = document.querySelectorAll("[data-count]");
 
