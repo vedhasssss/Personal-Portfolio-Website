@@ -164,6 +164,11 @@ a:focus-visible {
   color: var(--muted);
 }
 .hero-photo {
+  --rx: 0deg;
+  --ry: 0deg;
+  --px: 0px;
+  --py: 0px;
+  position: relative;
   background: var(--accent);
   border-radius: 24px;
   height: 440px;
@@ -171,12 +176,75 @@ a:focus-visible {
   align-items: flex-end;
   justify-content: center;
   overflow: hidden;
+  transform: perspective(900px) rotateX(var(--rx)) rotateY(var(--ry));
+  transition: transform 0.25s ease-out, box-shadow 0.3s;
+  will-change: transform;
+}
+.hero-photo:hover {
+  box-shadow: 0 22px 50px rgba(204, 122, 0, 0.35);
 }
 .hero-photo img {
+  position: relative;
+  z-index: 2;
   height: 96%;
   width: auto;
   max-width: 100%;
   object-fit: contain;
+  transform: translate(var(--px), var(--py)) scale(1);
+  transition: transform 0.25s ease-out;
+}
+.hero-photo:hover img {
+  transform: translate(var(--px), var(--py)) scale(1.04);
+}
+
+/* Floating shapes behind the portrait */
+.orb {
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  transition: transform 0.4s ease-out;
+  animation: float 6s ease-in-out infinite;
+}
+.orb-1 {
+  width: 190px;
+  height: 190px;
+  top: -40px;
+  right: -30px;
+}
+.orb-2 {
+  width: 90px;
+  height: 90px;
+  bottom: 70px;
+  left: 24px;
+  background: rgba(43, 26, 0, 0.12);
+  animation-delay: -2s;
+}
+.orb-3 {
+  width: 46px;
+  height: 46px;
+  top: 90px;
+  left: 60px;
+  background: rgba(255, 255, 255, 0.55);
+  animation-delay: -4s;
+}
+.hero-photo:hover .orb-1 {
+  transform: translate(calc(var(--px) * -2), calc(var(--py) * -2)) scale(1.1);
+}
+.hero-photo:hover .orb-2 {
+  transform: translate(calc(var(--px) * 3), calc(var(--py) * 3));
+}
+.hero-photo:hover .orb-3 {
+  transform: translate(calc(var(--px) * -4), calc(var(--py) * -4)) scale(1.3);
+}
+@keyframes float {
+  0%,
+  100% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -12px;
+  }
 }
 
 /* KPI tiles */
@@ -467,7 +535,11 @@ footer {
   }
   .bar span,
   .project,
-  .btn {
+  .btn,
+  .hero-photo,
+  .hero-photo img,
+  .orb {
     transition: none;
+    animation: none;
   }
 }
